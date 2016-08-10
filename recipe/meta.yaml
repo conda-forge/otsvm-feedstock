@@ -5,20 +5,43 @@ package:
   version: {{ version }}
 
 source:
-  fn: otsvm-{{ version }}.tar.gz
-  url: https://github.com/openturns/otsvm/archive/v{{ version }}.tar.gz
-  sha1: 2d35b9d1942341b04c4060678b5572c8e3565fa2
+  fn: otsvm-{{ version }}.tar.gz  # [not win]
+  url: https://github.com/openturns/otsvm/archive/v{{ version }}.tar.gz  # [not win]
+  sha256: a00672da0ebcf14f7429fbf7296a11a21b3f1878053ab02746ae6dbe8eb332c0  # [not win]
+
+  fn: otsvm-{{ version }}-py2.7-i686.exe  # [win32 and py27]
+  url: https://github.com/openturns/build/releases/download/v1.8rc1/otsvm-{{ version }}-py2.7-i686.exe  # [win32 and py27]
+  sha256: 4310d0128d9e499e7601fc270478b62a2af19c4cd6950279a6e58b0aee84b785  # [win32 and py27]
+
+  fn: otsvm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
+  url: https://github.com/openturns/build/releases/download/v1.8rc1/otsvm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
+  sha256: 2a970d8167e84d274ef4ac6d791e3079e67939d7888b7ab418c065411e974937  # [win64 and py27]
+
+  fn: otsvm-{{ version }}-py3.4-i686.exe  # [win32 and py34]
+  url: https://github.com/openturns/build/releases/download/v1.8rc1/otsvm-{{ version }}-py3.4-i686.exe  # [win32 and py34]
+  sha256: 8705fecb104f812e537142a43898f92b97b63125757a537e1b9a991c171d9d03  # [win32 and py34]
+
+  fn: otsvm-{{ version }}-py3.4-x86_64.exe  # [win64 and py34]
+  url: https://github.com/openturns/build/releases/download/v1.8rc1/otsvm-{{ version }}-py3.4-x86_64.exe  # [win64 and py34]
+  sha256: 99dc2f80e98354a5b43b0f000023f899fff6b8c418333bbc21273309d2e282be  # [win64 and py34]
+
+  fn: otsvm-{{ version }}-py3.5-i686.exe  # [win32 and py35]
+  url: https://github.com/openturns/build/releases/download/v1.8rc1/otsvm-{{ version }}-py3.5-i686.exe  # [win32 and py35]
+  sha256: 469323d82d3c35e0e74faa5c0b44a2c16b42fac2c7ce501bd71fa064e9f06321  # [win32 and py35]
+
+  fn: otsvm-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
+  url: https://github.com/openturns/build/releases/download/v1.8rc1/otsvm-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
+  sha256: ad23653d74774fae8cdcf44989d720a280474fed222f0d862cfbd6f13ebaff77  # [win64 and py35]
 
 build:
   number: 0
-  skip: true  # [win]
 
 requirements:
   build:
     - python
-    - cmake
-    - swig
-    - openturns
+    - cmake  # [not win]
+    - swig  # [not win]
+    - openturns  # [not win]
 
   run:
     - python
@@ -36,4 +59,3 @@ about:
 extra:
   recipe-maintainers:
     - jschueller
-
