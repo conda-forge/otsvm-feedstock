@@ -34,10 +34,11 @@ source:
   sha256: ad23653d74774fae8cdcf44989d720a280474fed222f0d862cfbd6f13ebaff77  # [win64 and py35]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - toolchain
     - python
     - cmake  # [not win]
     - swig  # [not win]
