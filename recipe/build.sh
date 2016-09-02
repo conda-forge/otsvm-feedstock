@@ -3,7 +3,7 @@
 mkdir -p build && cd build
 
 cmake \
-  -DCMAKE_FIND_ROOT_PATH=${PREFIX} \
+  -DCMAKE_PREFIX_PATH=${PREFIX} \
   -DCMAKE_INSTALL_PREFIX=${PREFIX} \
   -DUSE_SPHINX=OFF \
   ..
