@@ -1,4 +1,4 @@
-{% set version = "0.3" %}
+{% set version = "0.4" %}
 {% set ot_version = "1.10" %}
 
 package:
@@ -8,34 +8,34 @@ package:
 source:
   fn: otsvm-{{ version }}.tar.gz  # [not win]
   url: https://github.com/openturns/otsvm/archive/v{{ version }}.tar.gz  # [not win]
-  sha256: a4143ee7890893eef879baa90b22626c9fd8c26a98b1cb9c2a2f7719e9486cf3  # [not win]
+  sha256: 14166f7bb0da798a13d834e0b336038dd063252dc24ca91165236caddaf04083
 
   fn: otsvm-{{ version }}-py2.7-i686.exe  # [win32 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsvm-{{ version }}-py2.7-i686.exe  # [win32 and py27]
-  sha256: b1ee5f1cf53d4eb60578806ded7870e4c1f7201e3f2247e76b8bd157b6998e7a  # [win32 and py27]
+  sha256: 14166f7bb0da798a13d834e0b336038dd063252dc24ca91165236caddaf04083
 
   fn: otsvm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsvm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: c25156e067c8ed3a9d147377435cff3ecabcce98e7ebd35e63fd1a51d2558ef3  # [win64 and py27]
+  sha256: 14166f7bb0da798a13d834e0b336038dd063252dc24ca91165236caddaf04083
 
   fn: otsvm-{{ version }}-py3.5-i686.exe  # [win32 and py35]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsvm-{{ version }}-py3.5-i686.exe  # [win32 and py35]
-  sha256: 23b09346b9f6ab9e010185d9921227bc8dc1b1ed4297bd5fd73d62527930189b  # [win32 and py35]
+  sha256: 14166f7bb0da798a13d834e0b336038dd063252dc24ca91165236caddaf04083
 
   fn: otsvm-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsvm-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  sha256: d9caf3660d842e7adfc8a44fb8340561406410b942fda263777a01bdd6c248a0  # [win64 and py35]
+  sha256: 14166f7bb0da798a13d834e0b336038dd063252dc24ca91165236caddaf04083
 
   fn: otsvm-{{ version }}-py3.6-i686.exe  # [win32 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsvm-{{ version }}-py3.6-i686.exe  # [win32 and py36]
-  sha256: d9644267a45e2b122bcfa24f3e84e84bca62e26253d893c026c0d478f6d0d1b0  # [win32 and py36]
+  sha256: 14166f7bb0da798a13d834e0b336038dd063252dc24ca91165236caddaf04083
 
   fn: otsvm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsvm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  sha256: 5a4cd2e161cd6023bbddf6895ac463c94a994c0c5e86c330873b78b45434128f  # [win64 and py36]
+  sha256: 14166f7bb0da798a13d834e0b336038dd063252dc24ca91165236caddaf04083
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
