@@ -14,14 +14,16 @@ Summary: SVM module
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/otsvm-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/otsvm-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/otsvm-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/otsvm-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/otsvm-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/otsvm-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/otsvm-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/otsvm-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/otsvm-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/otsvm-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/otsvm-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/otsvm-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/otsvm/badges/version.svg)](https://anaconda.org/conda-forge/otsvm)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/otsvm/badges/downloads.svg)](https://anaconda.org/conda-forge/otsvm)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-otsvm-green.svg)](https://anaconda.org/conda-forge/otsvm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/otsvm.svg)](https://anaconda.org/conda-forge/otsvm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/otsvm.svg)](https://anaconda.org/conda-forge/otsvm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/otsvm.svg)](https://anaconda.org/conda-forge/otsvm) |
 
 Installing otsvm
 ================
