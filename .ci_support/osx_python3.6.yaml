@@ -2,6 +2,10 @@ MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
 c_compiler:
 - toolchain_c
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
 cxx_compiler:
 - toolchain_cxx
 macos_machine:
@@ -9,7 +13,7 @@ macos_machine:
 macos_min_version:
 - '10.9'
 openturns:
-- '1.11'
+- 1.12*
 pin_run_as_build:
   openturns:
     max_pin: x.x
