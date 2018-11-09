@@ -1,29 +1,16 @@
-{% set version = "0.4" %}
-{% set ot_version = "1.12rc1" %}
+{% set version = "0.5" %}
 
 package:
   name: otsvm
   version: {{ version }}
 
 source:
-  fn: otsvm-{{ version }}.tar.gz  # [not win]
-  url: https://github.com/openturns/otsvm/archive/v{{ version }}.tar.gz  # [not win]
-  sha256: 14166f7bb0da798a13d834e0b336038dd063252dc24ca91165236caddaf04083  # [not win]
-
-  fn: otsvm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsvm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: d1d7416ed1993090aa521932f95569aab1cf75f3a96723945fdabde7fe137822  # [win64 and py27]
-
-  fn: otsvm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsvm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  sha256: 6fd5ee0c4e32106703adfe9342586b815b080ca2c36a15f175fa705d29de26ac  # [win64 and py36]
-
-  fn: otsvm-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otsvm-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
-  sha256: cb0f11d59a0beb8b5758510129d25852f12d7f1146e8b71c8a4c561f680bf000  # [win64 and py37]
+  fn: otsvm-{{ version }}.tar.gz
+  url: https://github.com/openturns/otsvm/archive/v{{ version }}.tar.gz
+  sha256: ef92d0749628e667ffa6875dcdc8886af922306759ed8b51ae20c3f9dcc71c08
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -45,7 +32,7 @@ test:
 about:
   home: http://openturns.org/
   license: LGPL3
-  license_file: COPYING.LESSER  # [not win]
+  license_file: COPYING.LESSER
   summary: SVM module
 
 extra:
