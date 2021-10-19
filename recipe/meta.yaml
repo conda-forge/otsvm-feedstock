@@ -10,7 +10,7 @@ source:
   sha256: 835926d4c8adc37e0809577babb21e2103973537cd49efab07c9172ac7868482
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otsvm', max_pin='x.x') }}
 
@@ -23,10 +23,10 @@ requirements:
     - curl  # [win]
   host:
     - python
-    - openturns 1.17*
+    - openturns 1.18*
   run:
     - python
-    - openturns 1.17*
+    - openturns 1.18*
 
 test:
   imports:
