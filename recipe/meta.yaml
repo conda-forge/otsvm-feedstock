@@ -1,4 +1,4 @@
-{% set version = "0.10" %}
+{% set version = "0.11" %}
 
 package:
   name: otsvm
@@ -7,26 +7,27 @@ package:
 source:
   fn: otsvm-{{ version }}.tar.gz
   url: https://github.com/openturns/otsvm/archive/v{{ version }}.tar.gz
-  sha256: 835926d4c8adc37e0809577babb21e2103973537cd49efab07c9172ac7868482
+  sha256: a1cc617003686cbfcb31b4ad2feb45c715260e91866f8f23c0be3d949b09a8f2
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage('otsvm', max_pin='x.x') }}
 
 requirements:
   build:
     - cmake
+    - make  # [unix]
     - swig
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - curl  # [win]
   host:
     - python
-    - openturns 1.18*
+    - openturns 1.19*
   run:
     - python
-    - openturns 1.18*
+    - openturns 1.19*
 
 test:
   imports:
