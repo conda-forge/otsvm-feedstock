@@ -1,11 +1,11 @@
-About otsvm
-===========
+About otsvm-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/otsvm-feedstock/blob/main/LICENSE.txt)
 
 Home: http://openturns.org/
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/otsvm-feedstock/blob/main/LICENSE.txt)
 
 Summary: SVM module
 
