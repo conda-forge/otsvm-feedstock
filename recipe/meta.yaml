@@ -24,10 +24,10 @@ requirements:
     - curl  # [win]
   host:
     - python
-    - openturns 1.21*
+    - openturns 1.22*
   run:
     - python
-    - openturns 1.21*
+    - openturns 1.22*
 
 test:
   imports:
