@@ -1,5 +1,6 @@
 #!/bin/sh
 
+curl -L https://github.com/openturns/otsvm/commit/cb542a4fc.patch | patch -p1
 mkdir build && cd build
 
 cmake \
