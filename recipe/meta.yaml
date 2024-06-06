@@ -26,7 +26,6 @@ requirements:
   host:
     - python
     - openturns
-    - libcblas
   run:
     - python
     - openturns
