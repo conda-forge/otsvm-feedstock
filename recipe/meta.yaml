@@ -10,7 +10,7 @@ source:
   sha256: cc94c36abe7c7d7abb9ab6ca65d9bf8f107a2d7f02769c0fdd3f0306557ab399
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otsvm', max_pin='x.x') }}
 
