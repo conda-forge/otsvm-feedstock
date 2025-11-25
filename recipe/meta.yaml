@@ -10,7 +10,7 @@ source:
   sha256: 5d5ac24a5f7e873a8851363a3d0ad3f11633e0501e9bcf35acd508c99517c849
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otsvm', max_pin='x.x') }}
 
@@ -20,11 +20,11 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cmake
     - make  # [unix]
+    - ninja  # [win]
     - swig
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - curl  # [win]
   host:
     - python
     - openturns
