@@ -11,7 +11,6 @@ source:
 
 build:
   number: 0
-  skip: true  # [win and py==314]
   run_exports:
     - {{ pin_subpackage('otsvm', max_pin='x.x') }}
 
