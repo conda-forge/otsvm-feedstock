@@ -1,5 +1,5 @@
 context:
-  version: "0.17"
+  version: "0.18"
 
 package:
   name: otsvm
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/openturns/otsvm/archive/v${{ version }}.tar.gz
-  sha256: 5d5ac24a5f7e873a8851363a3d0ad3f11633e0501e9bcf35acd508c99517c849
+  sha256: 2d154f3f420dec4df001dbbb588ee653e4feb34e61cafc9ac45b4dcafce07d19
 
 build:
-  number: 3
+  number: 0
   python:
     version_independent: true
 
